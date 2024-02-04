@@ -4,9 +4,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useState, useEffect } from "react";
 
 export default function Home() {
-  // useEffect(() => {
-  //   import("bootstrap/dist/js/bootstrap");
-  // }, []);
+  useEffect(() => {
+    import("bootstrap/dist/js/bootstrap");
+  }, []);
   const [yesPressed, setYesPressed] = useState(false);
   const [noCount, setNoCount] = useState(0);
   const yesButtonSize = noCount * 20 + 16;
